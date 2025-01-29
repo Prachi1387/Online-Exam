@@ -1,0 +1,35 @@
+<head>
+ 
+
+    {%load static%}
+
+
+</head>
+
+<form>
+    
+    <select name="subject">
+
+        {% for dictionary in listofdictionary%}  
+
+            {% for key,value in dictionary.items %}
+
+               <option>{{value}}</option>
+
+               
+            {% endfor %}
+
+        {% endfor %}
+
+       
+    
+    </select>
+
+     <br><br>
+
+     <img src="{% static imagepath %}" width="100" height="100">
+
+
+    <input type="submit" value="Starttest" formaction="/examapp/startTest/" formmethod="get">
+
+</form>

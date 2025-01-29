@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+    <style>
+
+        input:not([type='submit'])
+        {
+            display: block;
+            margin: 10px;
+            padding: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <form onsubmit="return confirm('do you want to continue?')" >
+
+        <input name="qno" value="{{question.qno}}" placeholder="enter qno">
+        <input name="qtext" value="{{question.qtext}}">
+        <input name="answer" value="{{question.answer}}">
+        <input name="op1" value="{{question.op1}}">
+        <input name="op2" value="{{question.op2}}">
+        <input name="op3" value="{{question.op3}}">
+        <input name="op4" value="{{question.op4}}">
+        <input name="subject" value="{{question.subject}}"placeholder="enter subject">
+
+        <input type="submit" value="addQuestion" formaction="/examapp/addQuestion">
+        <input type="submit" value="viewQuestion" formaction="/examapp/viewQuestion">
+        <input type="submit" value="updateQuestion" formaction="/examapp/updateQuestion">
+      
+        <input type="submit" value="deleteQuestion"  formaction="/examapp/deleteQuestion" >
+
+    </form>
+
+    <span style="color:red;font-size: 30px;"> {{message}} </span>
+    
+</body>
+
+<a> href="/examapp/giveMePage3"> go to admin dashboard </a>
+
+</html>

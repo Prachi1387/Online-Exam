@@ -1,0 +1,36 @@
+
+<style>
+
+    input
+    {
+        padding: 10px;
+        margin: 10px;
+        display: block;
+    }
+
+</style>
+
+{%include 'loginapp/message.html' %}
+
+<form method="post">
+
+    {% csrf_token %}
+
+    <input placeholder="Enter user name" name="username">
+
+    <input type="password" placeholder="Enter password" name="password1">
+
+    <input type="password" placeholder="Enter password again" name="password2">
+
+    <input placeholder="Enter first name" name="first_name">
+
+    <input placeholder="Enter last name" name="last_name">
+
+    <input type="email" placeholder="Enter email" name="email">
+    
+    <input type="submit" value="register">
+
+</form>
+
+
+<span style="color: red; font-size: large;"> {{message}} </span>

@@ -1,0 +1,6 @@
+lazy loading in Django orm?
+ans: Django retrive the data from database only when we start using the object.
+
+<input type="file" name="photo"><br><br>===browser
+
+<form action="/saveuserdata" method="post" name="register" enctype="multipart/form-data">===this is manadotory in uploading

@@ -1,0 +1,41 @@
+<style>
+
+    table,td,th
+    {
+
+        border:1px solid red
+
+    }
+    table
+    {
+
+        border-collapse: collapse
+    }
+</style>
+
+</head>
+
+<span style="color: red; font-size: large;"> {{username}}, your score is {{score}} </span>
+
+<table>
+   <tr>
+     <th>Qno</th>
+     <th>Question</th>
+     <th>Correct Answer</th>
+     <th>Submitted Answer</th>
+   </tr>
+
+     {% for list in listoflist %}
+        <tr>
+
+             
+                <td> {{list.0}} </td>
+                <td> {{list.1}} </td>
+                <td> {{list.2}} </td>
+                <td> {{list.3}} </td>
+
+
+        </tr>
+    {% endfor %}        
+
+</table>

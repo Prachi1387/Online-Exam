@@ -1,0 +1,22 @@
+{%include 'loginapp/message.html' %}
+
+<div>
+    
+   {% if user.is_authenticated %}
+        
+        <a href="/logout"> Logout </a>
+    
+    {% else %}
+
+       <a href="/signup"> Register </a> &nbsp;&nbsp;
+
+       <a href="/login"> Login </a> &nbsp;&nbsp;
+
+    {% endif %}
+
+    <a href="/dashboard"> student details</a> &nbsp;&nbsp;
+    
+</div>
+
+
+<input placeholder="search on google">

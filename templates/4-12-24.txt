@@ -1,0 +1,8 @@
+select * from student where marks =90
+
+roll no    name
+
+
+
+
+primary key value in assign to foreign key.it means if you no primary key you can read the record of foreign  key.

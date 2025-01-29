@@ -1,0 +1,40 @@
+<h1> Result Analysis</h1>
+
+<form>
+         
+    <input type="text" name="subject" placeholder="enter subject">
+
+    <input type="submit" value="search" formaction="/examapp/search/">
+
+    
+    <a href="/examapp/search/1">1</a>
+    <a href="/examapp/search/2">2</a>
+    <a href="/examapp/search/3">3</a>
+        
+</form>
+
+<table>
+
+    <tr>
+      <th>username</th>
+      <th>subject</th>
+      <th>score Answer</th>
+      
+    </tr>
+ 
+      {% for list in result %}
+         <tr>
+ 
+              
+                 <td> {{result.username}} </td>
+                 <td> {{result.subject}} </td>
+                 <td> {{result.score}} </td>
+                 
+ 
+         </tr>
+
+     {% endfor %}        
+ 
+ </table>
+
+<a href="/examapp/giveMePage3"> go to admin dashboard </a>

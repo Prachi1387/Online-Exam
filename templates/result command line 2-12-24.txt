@@ -1,0 +1,79 @@
+mysql> use 1195db;
+Database changed
+mysql> select * from question table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table' at line 1
+mysql> select * from result table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table' at line 1
+mysql> show tables;
++----------------------------+
+| Tables_in_1195db           |
++----------------------------+
+| account                    |
+| auth_group                 |
+| auth_group_permissions     |
+| auth_permission            |
+| auth_user                  |
+| auth_user_groups           |
+| auth_user_user_permissions |
+| department                 |
+| django_admin_log           |
+| django_content_type        |
+| django_migrations          |
+| django_session             |
+| employee                   |
+| emplyoee                   |
+| emplyoee2                  |
+| emplyoee3                  |
+| firstapp_test              |
+| product                    |
+| question                   |
+| secondapp_test             |
+| stud1                      |
+| stud2                      |
+| stud3                      |
+| stud6                      |
+| test                       |
++----------------------------+
+25 rows in set (0.01 sec)
+
+mysql> create result tables;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'result tables' at line 1
+mysql> create table result('username'varchar(20)
+    -> ^C
+mysql> create table result(username varchar (20),subject varchar (20),score int);
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> show tables;
++----------------------------+
+| Tables_in_1195db           |
++----------------------------+
+| account                    |
+| auth_group                 |
+| auth_group_permissions     |
+| auth_permission            |
+| auth_user                  |
+| auth_user_groups           |
+| auth_user_user_permissions |
+| department                 |
+| django_admin_log           |
+| django_content_type        |
+| django_migrations          |
+| django_session             |
+| employee                   |
+| emplyoee                   |
+| emplyoee2                  |
+| emplyoee3                  |
+| firstapp_test              |
+| product                    |
+| question                   |
+| result                     |
+| secondapp_test             |
+| stud1                      |
+| stud2                      |
+| stud3                      |
+| stud6                      |
+| test                       |
++----------------------------+
+26 rows in set (0.00 sec)
+
+mysql>

@@ -1,0 +1,16 @@
+<form enctype="multipart/form-data">                                             
+
+
+    {% csrf_token %}
+    
+    <input type="text" name="username" placeholder="enter username"> <br><br>
+
+    <input type="password" name="password" placeholder="enter password"> <br><br>
+
+    <input type="email" name="email" placeholder="enter email"> <br><br>
+
+    <input type="file" name="photo"><br><br>
+
+    <input type="submit" value="register" formaction="/loginapp/saveUser/" formmethod="post">
+
+</form>   
